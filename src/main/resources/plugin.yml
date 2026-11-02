@@ -1,0 +1,21 @@
+name: AnomalousWeather
+version: '${project.version}'
+main: ru.anomaly.weather.AnomalousWeatherPlugin
+api-version: '1.21'
+authors: [ AnomalousWeather ]
+description: Аномальная погода — кислотный дождь, огненный дождь, снежная буря, токсичный туман и другое.
+website: https://papermc.io
+
+commands:
+  anomaly:
+    description: Управление аномальной погодой
+    usage: /anomaly help
+    aliases: [ aw, аномалия ]
+
+permissions:
+  anomalousweather.admin:
+    description: Полный доступ к команде /anomaly (start, stop, give, reload)
+    default: op
+  anomalousweather.status:
+    description: Просмотр статуса и списка аномалий
+    default: true
